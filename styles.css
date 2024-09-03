@@ -1,0 +1,98 @@
+/* Estilos Globais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Cor de fundo leve e neutra */
+}
+
+/* Estilo para o Header */
+header {
+    background-color: #ff5722; /* Cor vibrante para o header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px; /* Margem inferior para separar do conteúdo principal */
+}
+
+/* Estilo para o Main e Artigos */
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas de largura igual */
+    gap: 20px; /* Espaçamento entre os artigos */
+    padding: 0 20px;
+    margin-bottom: 20px; /* Margem inferior para separar do rodapé */
+}
+
+/* Estilo para o Section */
+section {
+    grid-column: span 3; /* Ocupa toda a largura disponível em dispositivos maiores */
+    text-align: center;
+    margin-bottom: 20px; /* Margem inferior para separar do conteúdo principal */
+}
+
+/* Estilo para os Artigos */
+article {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #ffffff; /* Cor de fundo branca para os artigos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona sombra para um efeito leve de elevação */
+}
+
+/* Estilo para Imagens */
+article img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 50%; /* Imagem circular */
+    border: 2px solid #ff5722; /* Borda colorida combinando com o header */
+}
+
+/* Estilo para Títulos e Parágrafos */
+article h2 {
+    margin: 10px 0;
+    font-family: 'Roboto', sans-serif; /* Fonte estilosa para os títulos */
+    font-size: 1.5em;
+    color: #333; /* Cor escura para contraste */
+}
+
+article p {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    color: #666; /* Cor de texto suave */
+}
+
+/* Estilo para Informações Adicionais */
+.more-info {
+    display: none; /* Oculta as informações adicionais por padrão */
+    margin-top: 10px;
+}
+
+/* Estilo para Botões */
+button {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #e64a19; /* Cor de fundo mais escura no hover */
+}
+
+/* Estilo para o Footer */
+footer {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}

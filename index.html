@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de Conhecimento sobre Atletas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+
+<body>
+    <header>
+        <h1>Base de Conhecimento sobre Atletas</h1>
+    </header>
+    <main>
+        <section>
+            <input type="text" placeholder="Digite o nome do Atleta" oninput="pesquisarAtleta()">  
+            <button onclick="pesquisarAtleta()">Pesquisar</button>
+        </section>
+        
+        <!-- Artigo 1: Michael Phelps -->
+        <article data-nome="Michael Phelps">
+            <img src="https://swimchannel.net/br/wp-content/uploads/2016/12/phelps_medals9.jpg" alt="Michael Phelps">
+            <h2>Michael Phelps</h2>
+            <p>Atleta de natação, considerado um dos maiores nadadores de todos os tempos.</p>
+            <div class="more-info">
+                <p>Medalhas Olímpicas: 23 de Ouro, 3 de Prata, 2 de Bronze.</p>
+                <p>Recordes Mundiais: 39 no total.</p>
+            </div>
+            <button onclick="toggleInfo(this)">Ver mais</button>
+        </article>
+
+        <!-- Artigo 2: LeBron James -->
+        <article data-nome="LeBron James">
+            <img src="https://c.ndtvimg.com/2024-08/rm940mh8_lebron-james-afp_625x300_11_August_24.jpg?im=FitAndFill,algorithm=dnn,width=806,height=605" alt="LeBron James">
+            <h2>LeBron James</h2>
+            <p>Jogador de basquete, conhecido por sua habilidade e versatilidade em quadra.</p>
+            <div class="more-info">
+                <p>Títulos da NBA: 4 (2012, 2013, 2016, 2020).</p>
+                <p>Pontuação média na carreira: 27 pontos por jogo.</p>
+            </div>
+            <button onclick="toggleInfo(this)">Ver mais</button>
+        </article>
+
+        <!-- Artigo 3: Rebeca Andrade -->
+        <article data-nome="Rebeca Andrade">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7YV8Ad7EG7IS3gJoajVJKK7UUZ1LqeAawldGMTiTXRgiUJx_J" alt="Rebeca Andrade">
+            <h2>Rebeca Andrade</h2>
+            <p>Ginasta olímpica, medalhista em competições internacionais.</p>
+            <div class="more-info">
+                <p>Medalhas Olímpicas: Ouro no salto, Prata no individual geral (Tóquio 2020).</p>
+                <p>Títulos Mundiais: Campeã mundial no salto em 2021.</p>
+            </div>
+            <button onclick="toggleInfo(this)">Ver mais</button>
+        </article>
+    </main>
+    <footer>
+        <p>2024</p>
+        <p>Contatos: 82 988822990</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

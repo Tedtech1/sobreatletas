@@ -95,23 +95,39 @@ footer {
     input[type="text"] {
         width: 60%; /* Ajusta o tamanho do input em tablets */
     }
+
+    section {
+        flex-direction: column; /* Organiza o input e o botão em colunas no tablet */
+        align-items: stretch; /* Ajusta largura do input e botão */
+    }
 }
 
 @media (max-width: 480px) {
     main {
         grid-template-columns: 1fr; /* 1 coluna em dispositivos móveis */
+        margin: 10px; /* Ajusta a margem para telas menores */
+    }
+
+    section {
+        grid-column: span 1;
+        flex-direction: column; /* Coloca o input e o botão em linha vertical no celular */
+        align-items: stretch; /* Alinha ambos os elementos em toda a largura */
+        gap: 5px; /* Reduz o espaçamento entre input e botão */
+        margin-bottom: 15px;
     }
 
     input[type="text"] {
         width: 100%; /* Input ocupa toda a largura no celular */
+        box-sizing: border-box; /* Garante que padding seja incluído na largura total */
     }
 
     button {
         width: 100%; /* Botão ocupa toda a largura no celular */
+        box-sizing: border-box; /* Garante que padding seja incluído na largura total */
     }
-
-    section {
-        flex-direction: column; /* Coloca o input e o botão em linha vertical no celular */
-        align-items: stretch; /* Alinha ambos os elementos em toda a largura */
+    
+    article img {
+        width: 100px;
+        height: 100px; /* Reduz o tamanho da imagem no celular */
     }
 }

@@ -1,8 +1,8 @@
 // Função para pesquisar atletas
 function pesquisarAtleta() {
     const input = document.querySelector('input[type="text"]').value.toLowerCase();
-
     const artigos = document.querySelectorAll('article');
+    
     artigos.forEach(artigo => {
         const nomeAtleta = artigo.getAttribute('data-nome').toLowerCase();
         if (nomeAtleta.includes(input)) {
